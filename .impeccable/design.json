@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T03:52:05+00:00",
+  "title": "Design System: Soon Jan Jan CV",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Offset Paper",
+        "canonical": "oklch(96.9% 0.004 121.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252523",
+          "#414240",
+          "#61625f",
+          "#828380",
+          "#a4a5a3",
+          "#c8c9c7",
+          "#eeefec"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Stripe Paper",
+        "canonical": "oklch(93.7% 0.007 124.5)",
+        "tonalRamp": [
+          "#0a0c09",
+          "#242622",
+          "#41433f",
+          "#60625e",
+          "#81837f",
+          "#a4a6a1",
+          "#c8cac5",
+          "#edefea"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Blue-Black Ink",
+        "canonical": "oklch(20.9% 0.013 264.2)",
+        "tonalRamp": [
+          "#080b11",
+          "#22252b",
+          "#3f4249",
+          "#5e6169",
+          "#7e828a",
+          "#a1a5ad",
+          "#c5c9d2",
+          "#eaeff7"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2 (secondary text)",
+        "canonical": "oklch(42.0% 0.023 265.7)",
+        "tonalRamp": [
+          "#070b15",
+          "#202531",
+          "#3c424f",
+          "#5b616f",
+          "#7c8291",
+          "#9ea5b4",
+          "#c2c9d9",
+          "#e7efff"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3 (marks only)",
+        "canonical": "oklch(57.8% 0.022 262.9)",
+        "tonalRamp": [
+          "#070b14",
+          "#1f2530",
+          "#3c424e",
+          "#5b616e",
+          "#7c8390",
+          "#9ea5b3",
+          "#c2c9d8",
+          "#e7effe"
+        ]
+      },
+      "hair": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(84.4% 0.009 258.3)",
+        "tonalRamp": [
+          "#090b0f",
+          "#22252a",
+          "#3f4247",
+          "#5e6167",
+          "#7f8388",
+          "#a1a5ab",
+          "#c5c9cf",
+          "#ebeff5"
+        ]
+      },
+      "series": {
+        "role": "primary",
+        "displayName": "Series Green",
+        "canonical": "oklch(37.4% 0.054 171.3)",
+        "tonalRamp": [
+          "#001208",
+          "#002d22",
+          "#1f4b3e",
+          "#406b5d",
+          "#618d7e",
+          "#83b1a1",
+          "#a6d5c5",
+          "#cbfbea"
+        ]
+      },
+      "on-series": {
+        "role": "neutral",
+        "displayName": "Paper on Series",
+        "canonical": "oklch(96.9% 0.004 121.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252523",
+          "#414240",
+          "#61625f",
+          "#828380",
+          "#a4a5a3",
+          "#c8c9c7",
+          "#eeefec"
+        ]
+      },
+      "proof": {
+        "role": "secondary",
+        "displayName": "Proofreader's Blue",
+        "canonical": "oklch(48.8% 0.217 264.4)",
+        "tonalRamp": [
+          "#140066",
+          "#06008c",
+          "#0326b2",
+          "#1e50da",
+          "#3d75ff",
+          "#5e9bff",
+          "#80c1ff",
+          "#a4e8ff"
+        ]
+      },
+      "proof-wash": {
+        "role": "secondary",
+        "displayName": "Proof Wash",
+        "canonical": "oklch(92.8% 0.028 268.4)",
+        "tonalRamp": [
+          "#060a17",
+          "#1f2533",
+          "#3b4252",
+          "#5a6172",
+          "#7b8294",
+          "#9da5b8",
+          "#c1c9dc",
+          "#e6eeff"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "Error Red",
+        "canonical": "oklch(47.2% 0.163 29.6)",
+        "tonalRamp": [
+          "#370000",
+          "#5d0000",
+          "#830000",
+          "#aa2e22",
+          "#d25444",
+          "#fa7866",
+          "#ff9d89",
+          "#ffc2ad"
+        ]
+      },
+      "fit": {
+        "role": "primary",
+        "displayName": "Fitted Line",
+        "canonical": "oklch(37.4% 0.054 171.3)",
+        "tonalRamp": [
+          "#001208",
+          "#002d22",
+          "#1f4b3e",
+          "#406b5d",
+          "#618d7e",
+          "#83b1a1",
+          "#a6d5c5",
+          "#cbfbea"
+        ]
+      },
+      "print-paper": {
+        "role": "neutral",
+        "displayName": "Print Paper",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "print-ink": {
+        "role": "neutral",
+        "displayName": "Print Ink",
+        "canonical": "oklch(0.0% 0.000 0.0)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "print-ink-2": {
+        "role": "neutral",
+        "displayName": "Print Ink 2",
+        "canonical": "oklch(32.1% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "print-ink-3": {
+        "role": "neutral",
+        "displayName": "Print Ink 3",
+        "canonical": "oklch(51.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "print-hair": {
+        "role": "neutral",
+        "displayName": "Print Hairline",
+        "canonical": "oklch(79.2% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name, once per page."
+      },
+      "headline": {
+        "displayName": "Table title",
+        "purpose": "\"Table N.\" section titles, number set bold."
+      },
+      "title": {
+        "displayName": "Standfirst",
+        "purpose": "The one-sentence line under the name."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Table cells and running text; labels use the italic."
+      },
+      "notes": {
+        "displayName": "Notes",
+        "purpose": "Notes lines, footnotes, captions, counts."
+      },
+      "margin-head": {
+        "displayName": "Margin head",
+        "purpose": "Uppercase margin heading for the Abstract only."
+      },
+      "abstract": {
+        "displayName": "Abstract",
+        "purpose": "The Abstract paragraphs, indented, 66ch measure."
+      },
+      "display-print": {
+        "displayName": "Display (print)",
+        "purpose": "The name on paper."
+      },
+      "print-root": {
+        "displayName": "Print root",
+        "purpose": "Root size on paper; rem steps scale from it."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions and the hero rule draw."
+      },
+      {
+        "name": "rule-draw",
+        "value": "0.9s ease-out (bottom rule +0.18s)",
+        "purpose": "Table 1's heavy rules draw in on arrival."
+      },
+      {
+        "name": "row-in",
+        "value": "0.7s ease-out, 60ms stagger",
+        "purpose": "Table 1 rows settle in; filtered Table 4 rows re-enter (0.45s)."
+      },
+      {
+        "name": "figure-1",
+        "value": "Lottie, 100 frames at 30fps",
+        "purpose": "Axes, points, OLS line, residuals; plays once in view; final frame under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "head-trim",
+        "value": "1080px"
+      },
+      {
+        "name": "stack",
+        "value": "900px"
+      },
+      {
+        "name": "table-stack",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "One per region: the main action (Write to me, Open in my email app).",
+      "html": "<button class=\"ds-btn-primary\">Write to me</button>",
+      "css": ".ds-btn-primary { font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; font-size: 1.02rem; min-height: 46px; padding: 0 22px; background: #1e4a3d; color: #f4f5f2; border: 0.75px solid #1e4a3d; border-radius: 2px; cursor: pointer; transition: background-color .2s cubic-bezier(.16,1,.3,1), color .2s; } .ds-btn-primary:hover { background: #15181e; border-color: #15181e; color: #f4f5f2; } .ds-btn-primary:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 3px; } .ds-btn-primary:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quieter companion action (Save as PDF).",
+      "html": "<button class=\"ds-btn-secondary\">Save as PDF</button>",
+      "css": ".ds-btn-secondary { font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; font-size: 1.02rem; min-height: 46px; padding: 0 22px; background: transparent; color: #15181e; border: 0.75px solid #15181e; border-radius: 2px; cursor: pointer; transition: background-color .2s cubic-bezier(.16,1,.3,1); } .ds-btn-secondary:hover { background: #e9ebe6; } .ds-btn-secondary:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Ruled field: stripe-paper ground, ink bottom rule, italic label above.",
+      "html": "<label class=\"ds-field\"><span>Your email</span><input type=\"email\" placeholder=\"\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; } .ds-field span { font-style: italic; color: #474d5a; } .ds-field input { font: inherit; font-size: 1.125rem; min-height: 46px; padding: 12px; background: #e9ebe6; color: #15181e; border: 0; border-bottom: 0.75px solid #15181e; border-radius: 0; } .ds-field input:focus { outline: none; border-bottom: 2px solid #1d4ed8; background: #dfe7fb; }"
+    },
+    {
+      "name": "Running Head",
+      "kind": "nav",
+      "refersTo": "running-head",
+      "description": "Sticky series-green band; current section carries the solid rule.",
+      "html": "<nav class=\"ds-head\"><b>Soon Jan Jan <i>Curriculum vitae</i></b><a href=\"#\" aria-current=\"true\">Abstract</a><a href=\"#\">Teaching</a><a href=\"#\">Publications</a></nav>",
+      "css": ".ds-head { display: flex; align-items: center; gap: 22px; min-height: 56px; padding: 0 24px; background: #1e4a3d; color: #f4f5f2; font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; } .ds-head b { margin-right: auto; } .ds-head i { font-weight: 400; opacity: .8; } .ds-head a { color: inherit; text-decoration: none; opacity: .78; padding: 14px 0; border-bottom: 1.5px solid transparent; } .ds-head a:hover { opacity: 1; border-bottom: 0.75px dashed currentColor; } .ds-head a[aria-current=\"true\"] { opacity: 1; border-bottom: 1.5px solid currentColor; }"
+    },
+    {
+      "name": "Booktabs Table",
+      "kind": "custom",
+      "refersTo": "booktabs-table",
+      "description": "The signature: heavy top, light mid, heavy bottom; italic heads; hairline rows.",
+      "html": "<div class=\"ds-bt\"><table><thead><tr><th>Code</th><th>Course</th><th>Role</th></tr></thead><tbody><tr><td>BEER3043</td><td>Research Methodology</td><td>Course coordinator</td></tr><tr><td>—</td><td>Student research supervision</td><td>Supervisor</td></tr></tbody></table></div>",
+      "css": ".ds-bt { border-top: 1.5px solid #15181e; border-bottom: 1.5px solid #15181e; font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; font-size: 1.125rem; font-variant-numeric: lining-nums tabular-nums; color: #15181e; } .ds-bt table { width: 100%; border-collapse: collapse; } .ds-bt th, .ds-bt td { text-align: left; padding: .62em 1.25em .62em 0; } .ds-bt th { font-weight: 400; font-style: italic; color: #474d5a; border-bottom: 0.75px solid #15181e; } .ds-bt tbody tr + tr td { border-top: 0.75px solid #c8ccd2; } .ds-bt tbody tr:hover { background: #e9ebe6; }"
+    },
+    {
+      "name": "Open Entry",
+      "kind": "custom",
+      "refersTo": "open-entry",
+      "description": "A proof mark for a detail the author has yet to supply.",
+      "html": "<p class=\"ds-p\">Ph.D., <span class=\"ds-tbd\">field</span>, <span class=\"ds-tbd\">University</span></p>",
+      "css": ".ds-p { font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; font-size: 1.125rem; color: #15181e; } .ds-tbd { color: #1d4ed8; font-style: italic; background: #dfe7fb; border-bottom: 1px dashed #1d4ed8; padding: 0 .15em; border-radius: 1px; }"
+    },
+    {
+      "name": "Column Specification",
+      "kind": "chip",
+      "refersTo": "column-spec",
+      "description": "Numbered-column filter; the chosen column takes the solid rule.",
+      "html": "<div class=\"ds-spec\"><button aria-pressed=\"true\">(1) All</button><button aria-pressed=\"false\">(2) Journal</button><button aria-pressed=\"false\">(3) Conference</button></div>",
+      "css": ".ds-spec { display: flex; gap: 28px; font-family: \"CMU Serif\", \"Latin Modern Roman\", Georgia, serif; } .ds-spec button { font: inherit; font-size: 1.125rem; min-height: 44px; padding: 0 2px; background: none; border: 0; border-bottom: 0.75px dashed #737a87; color: #474d5a; cursor: pointer; } .ds-spec button:hover { color: #15181e; border-bottom-color: #15181e; } .ds-spec button[aria-pressed=\"true\"] { color: #15181e; border-bottom: 1.5px solid #15181e; } .ds-spec button:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Results Table",
+    "overview": "The page is set the way an economist's paper sets its evidence: Computer Modern on offset paper, booktabs rules, numbered tables and figures, and notes under each table. Academic peers read that grammar every day, so they recognise the page's discipline before they read a word. The CV is a record, and the system presents it as one, with no marketing chrome.\n\nThe tone is exact, quiet and honest. Hierarchy comes from the typography of a well-set journal page: a large bold name, captions such as \"Table 2.\" in bold, and italic column heads and labels. Colour is used sparingly and always for a job. The series green marks the working-paper band, and the proofreader's blue marks every link and every entry still waiting for the author. Missing facts are never hidden or invented. They appear as proof marks, which is also the system's most distinctive device.\n\nThere is one authored moment of motion. On arrival, Figure 1's least-squares line draws itself through illustrative data while Table 1's rules draw in beside it. Everything else stays still.",
+    "keyCharacteristics": [
+      "One typeface, Computer Modern Serif (CMU), self-hosted, with tabular lining figures.",
+      "Booktabs tables: a heavy top rule, a light rule under the head, a heavy bottom rule, and hairline row dividers.",
+      "Numbered apparatus: Table 1–5, Figure 1, \"Notes:\" lines and lettered footnotes.",
+      "A series-green band for the running head and footer; proofreader's blue for links and open entries.",
+      "A flat page with no shadows, no cards, and corners of 2px or less.",
+      "Light and dark themes from the same tokens; the page prints as the CV."
+    ],
+    "rules": [
+      {
+        "name": "The Proof-Blue Rule",
+        "body": "Blue means \"act here\" or \"still to be written\". Use it for links, focus and open entries, never for decoration or emphasis.",
+        "section": "colors"
+      },
+      {
+        "name": "The Series Band Rule",
+        "body": "Series green appears only on the running head, the footer band, the primary action and the fitted line. A second accent colour is never added.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-3 Rule",
+        "body": "Ink 3 is for marks, not words. Text never drops below Ink 2.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Face Rule",
+        "body": "Every element uses Computer Modern Serif. Hierarchy comes from size, weight and italic. Never add a sans, a mono or a second serif.",
+        "section": "typography"
+      },
+      {
+        "name": "The Apparatus Rule",
+        "body": "Tables and figures are numbered in reading order and captioned with a bold number. Explanations go below as \"Notes:\" or lettered footnotes, never in tooltips or cards.",
+        "section": "typography"
+      },
+      {
+        "name": "The Booktabs Rule",
+        "body": "Tables get exactly three structural rules: a heavy top, a light rule under the head, and a heavy bottom. Rows are separated by hairlines. Never use vertical rules, boxed cells or zebra striping at rest.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "Nothing on the page casts a shadow, and nothing floats above the paper.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Solid-Means-Chosen Rule",
+        "body": "An active filter column or current nav section gets a solid 1.5px rule beneath it. Inactive and hovered states use a dashed 0.75px rule.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do set every new record as a numbered booktabs table with a bold \"Table N.\" title and notes underneath.",
+      "Do mark every unknown fact as an open entry (.tbd) until the author supplies it.",
+      "Do label any demonstration data \"Illustrative data\" in the caption.",
+      "Do keep figures tabular and lining, and align text to the rules' left edge.",
+      "Do keep the one authored motion moment, and keep everything else still.",
+      "Do check new text against Ink 2 or stronger in both themes, and print-preview new sections."
+    ],
+    "donts": [
+      "Don't use cards, shadows, rounded containers, or corners over 2px.",
+      "Don't add stat counters, percentage skill bars, progress rings or big-number \"metrics\". They are claims the record does not make.",
+      "Don't put a kicker or eyebrow label above a heading.",
+      "Don't use significance stars, standard errors or coefficients on anything that is not an estimate.",
+      "Don't add a second accent colour, a gradient, a sans-serif or a monospace face.",
+      "Don't use emoji or Unicode glyphs as icons; draw them as SVG in the 1.6-stroke family.",
+      "Don't invent publications, dates, titles or links to fill a table."
+    ]
+  }
+}

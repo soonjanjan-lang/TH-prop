@@ -3,222 +3,291 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soon Jan Jan — CV</title>
-  <meta name="description" content="Curriculum Vitae of Soon Jan Jan, School of Economics, Finance and Banking, Universiti Utara Malaysia.">
+  <title>Soon Jan Jan · Curriculum Vitae</title>
+  <meta name="description" content="Curriculum vitae of Soon Jan Jan, economist at the School of Economics, Finance and Banking, Universiti Utara Malaysia.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="fonts/cmu-serif-500-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script>
     try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
 </head>
 <body>
-  <!-- NOTE: Items marked [Edit] are placeholders. Replace them with your real details. -->
-  <header class="nav" id="top">
-    <div class="container nav__inner">
-      <a href="#top" class="nav__logo">SJJ<span>.</span></a>
-      <nav class="nav__links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+  <!--
+    HOW TO EDIT: every <span class="tbd">…</span> is a detail still to be supplied.
+    Replace the whole span with your real text. When you add your real email,
+    also delete the data-placeholder attribute on the #authorEmail link.
+  -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="head" id="top">
+    <div class="wrap head__inner">
+      <a class="head__title" href="#top">Soon Jan Jan <span>Curriculum vitae</span></a>
+      <nav class="head__nav" id="nav" aria-label="Sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#appointments">Appointments</a>
         <a href="#teaching">Teaching</a>
-        <a href="#research">Research</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#publications">Publications</a>
+        <a href="#methods">Methods</a>
+        <a href="#correspondence">Correspondence</a>
       </nav>
-      <div class="nav__actions">
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">◐</button>
-        <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="head__tools">
+        <button class="tool" id="themeToggle" type="button" aria-label="Switch colour theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.25"/><path d="M12 3.75v16.5a8.25 8.25 0 0 0 0-16.5z" class="fill"/></svg>
+        </button>
+        <button class="tool head__menu" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open sections menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__text">
-          <p class="eyebrow">Economics · Research Methodology</p>
-          <h1>Soon Jan Jan</h1>
-          <p class="hero__role" id="typed" aria-live="polite">Academic &amp; Researcher</p>
-          <p class="hero__lead">
-            Academic staff at the School of Economics, Finance and Banking, UUM College of Business,
-            Universiti Utara Malaysia. I teach students how to turn questions into rigorous,
-            evidence-based economic research.
-          </p>
-          <div class="hero__cta">
-            <a href="#contact" class="btn btn--primary">Get in touch</a>
-            <a href="#" class="btn btn--ghost" id="downloadCv">Download CV</a>
-          </div>
+  <main id="main">
+    <!-- Title page: name, Table 1, Figure 1 -->
+    <section class="title wrap" aria-labelledby="name">
+      <div class="title__text">
+        <h1 id="name">Soon Jan Jan</h1>
+        <p class="title__lede">Economist at Universiti Utara Malaysia, teaching how sound research is designed, measured and tested.</p>
+
+        <p class="caption" id="t1"><span class="tn">Table 1.</span> Affiliation</p>
+        <div class="bt-wrap bt-wrap--draw">
+          <table class="bt bt--meta" aria-labelledby="t1">
+            <tbody>
+              <tr><th scope="row">Position</th><td><span class="tbd">Your title, e.g. Senior Lecturer</span></td></tr>
+              <tr><th scope="row">School</th><td>School of Economics, Finance and Banking</td></tr>
+              <tr><th scope="row">College</th><td>UUM College of Business, Universiti Utara Malaysia</td></tr>
+              <tr><th scope="row">Coordinator of</th><td>BEER3043 Research Methodology</td></tr>
+              <tr><th scope="row">Location</th><td>Sintok, Kedah, Malaysia</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div class="hero__card reveal">
-          <div class="avatar" aria-hidden="true">SJ</div>
-          <ul class="facts">
-            <li><span>Institution</span>Universiti Utara Malaysia</li>
-            <li><span>School</span>Economics, Finance &amp; Banking</li>
-            <li><span>Focus</span>Research Methodology</li>
-            <li><span>Location</span>Sintok, Kedah, Malaysia</li>
-          </ul>
+        <p class="notes"><i>Notes:</i> Entries set <span class="tbd">like this</span> are details still to be supplied.</p>
+
+        <div class="title__actions">
+          <a class="btn btn--primary" href="#correspondence">Write to me</a>
+          <button class="btn" id="saveCv" type="button">Save as PDF</button>
         </div>
+      </div>
+
+      <figure class="fig" id="fig1">
+        <div class="fig__plot" role="img"
+             aria-label="Scatter plot of sixteen illustrative observations of y against x. A fitted least-squares line rises from left to right, with dashed residuals linking each point to the line.">
+          <div class="fig__canvas" id="figPlot"></div>
+          <i class="fig__axis fig__axis--y" aria-hidden="true">y</i>
+          <i class="fig__axis fig__axis--x" aria-hidden="true">x</i>
+        </div>
+        <figcaption>
+          <span class="tn">Figure 1.</span> Observations, the least-squares line through them, and what the line leaves unexplained.
+          <i>Illustrative data.</i>
+          <button class="link" id="replay" type="button">Replay</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Abstract -->
+    <section class="sec wrap" id="abstract" aria-labelledby="h-abstract">
+      <h2 id="h-abstract">Abstract</h2>
+      <div class="abstract">
+        <p>
+          I am an economist at the UUM College of Business, where I coordinate
+          BEER3043 Research Methodology for the Bachelor of Science in Economics (Hons).
+          The course takes students from the philosophy of research and the scientific method,
+          through data collection, fieldwork ethics, sampling and statistical testing,
+          to a research proposal written in the standard format.
+        </p>
+        <p>
+          My aim is graduates who can plan, analyse, evaluate and communicate research on their own.
+          <span class="tbd">Add one or two sentences on your own research questions and findings.</span>
+        </p>
+        <dl class="kw">
+          <div><dt>Keywords</dt><dd>research methodology; primary data; sampling; statistical testing; research proposals</dd></div>
+          <div><dt>JEL codes</dt><dd><span class="tbd">e.g. A22, C83</span></dd></div>
+        </dl>
       </div>
     </section>
 
-    <!-- STATS -->
-    <section class="stats">
-      <div class="container stats__grid">
-        <div class="stat reveal"><strong data-count="10">0</strong><span>Years teaching [Edit]</span></div>
-        <div class="stat reveal"><strong data-count="20">0</strong><span>Publications [Edit]</span></div>
-        <div class="stat reveal"><strong data-count="500">0</strong><span>Students taught [Edit]</span></div>
-        <div class="stat reveal"><strong data-count="5">0</strong><span>Research grants [Edit]</span></div>
+    <!-- Table 2 -->
+    <section class="sec wrap" id="appointments" aria-labelledby="h-appointments">
+      <h2 id="h-appointments"><span class="tn">Table 2.</span> Appointments and education</h2>
+      <div class="bt-wrap">
+        <table class="bt bt--stack" aria-labelledby="h-appointments">
+          <thead>
+            <tr><th scope="col" class="c-period">Period</th><th scope="col">Position or degree</th><th scope="col">Institution</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Period" class="num"><span class="tbd">Year</span>–present</td>
+              <td data-label="Position"><span class="tbd">Position title</span></td>
+              <td data-label="Institution">School of Economics, Finance and Banking, Universiti Utara Malaysia</td>
+            </tr>
+            <tr>
+              <td data-label="Period" class="num"><span class="tbd">Year</span></td>
+              <td data-label="Degree">Ph.D., <span class="tbd">field</span></td>
+              <td data-label="Institution"><span class="tbd">University</span></td>
+            </tr>
+            <tr>
+              <td data-label="Period" class="num"><span class="tbd">Year</span></td>
+              <td data-label="Degree"><span class="tbd">Master’s degree</span></td>
+              <td data-label="Institution"><span class="tbd">University</span></td>
+            </tr>
+            <tr>
+              <td data-label="Period" class="num"><span class="tbd">Year</span></td>
+              <td data-label="Degree"><span class="tbd">Bachelor’s degree</span></td>
+              <td data-label="Institution"><span class="tbd">University</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
-        <h2 class="section__title reveal">About</h2>
-        <div class="about reveal">
-          <p>
-            I am an economist at the UUM College of Business, where I coordinate
-            <strong>BEER3043 Research Methodology</strong> for the Bachelor of Science in Economics (Hons).
-            My teaching covers the philosophy of research, the scientific method, data collection
-            and fieldwork ethics, sampling, statistical testing, and computer-based data analysis.
-          </p>
-          <p>
-            I care about helping students build the skills to plan, analyse, evaluate and communicate
-            research, and about producing graduates with strong analytical ability and sound
-            professional character. [Edit: add a sentence about your own research focus.]
-          </p>
+    <!-- Table 3 -->
+    <section class="sec wrap" id="teaching" aria-labelledby="h-teaching">
+      <h2 id="h-teaching"><span class="tn">Table 3.</span> Teaching</h2>
+      <div class="bt-wrap">
+        <table class="bt bt--stack" aria-labelledby="h-teaching">
+          <thead>
+            <tr><th scope="col">Code</th><th scope="col">Course</th><th scope="col">Role</th><th scope="col" class="num">Semester</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Code" class="num">BEER3043</td>
+              <td data-label="Course">Research Methodology <sup>a</sup></td>
+              <td data-label="Role">Course coordinator</td>
+              <td data-label="Semester" class="num">A232</td>
+            </tr>
+            <tr>
+              <td data-label="Code" class="num"><span class="tbd">Code</span></td>
+              <td data-label="Course"><span class="tbd">Another course you teach</span></td>
+              <td data-label="Role"><span class="tbd">Lecturer</span></td>
+              <td data-label="Semester" class="num"><span class="tbd">—</span></td>
+            </tr>
+            <tr>
+              <td data-label="Code" class="num">—</td>
+              <td data-label="Course">Student research supervision</td>
+              <td data-label="Role">Supervisor</td>
+              <td data-label="Semester" class="num"><span class="tbd">Years</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="notes">
+        <sup>a</sup> Three credits; prerequisites BEEB2013 Microeconomics and BEEB2023 Macroeconomics.
+        Covers the role of theory in research, data collection and fieldwork ethics, sampling,
+        statistical tests and data analysis, and writing a research proposal. Co-taught with
+        Raji Jimoh Olajide and Shri Dewi a/p Applanaidu.
+      </p>
+    </section>
+
+    <!-- Table 4 -->
+    <section class="sec wrap" id="publications" aria-labelledby="h-publications">
+      <h2 id="h-publications"><span class="tn">Table 4.</span> Selected publications</h2>
+      <div class="spec" role="group" aria-label="Show publications of type">
+        <button type="button" class="spec__col" data-filter="all" aria-pressed="true"><span class="num">(1)</span> All</button>
+        <button type="button" class="spec__col" data-filter="journal" aria-pressed="false"><span class="num">(2)</span> Journal</button>
+        <button type="button" class="spec__col" data-filter="conference" aria-pressed="false"><span class="num">(3)</span> Conference</button>
+      </div>
+      <div class="bt-wrap">
+        <table class="bt bt--stack bt--pubs" aria-labelledby="h-publications">
+          <thead>
+            <tr><th scope="col" class="num">Year</th><th scope="col">Publication</th><th scope="col">Type</th></tr>
+          </thead>
+          <tbody id="pubRows">
+            <tr data-type="journal">
+              <td data-label="Year" class="num"><span class="tbd">2025</span></td>
+              <td data-label="Publication">Soon, J. J., &amp; <span class="tbd">Co-author</span>. <span class="tbd">Article title</span>. <i><span class="tbd">Journal</span></i>, <span class="tbd">vol(issue), pages</span>.</td>
+              <td data-label="Type">Journal</td>
+            </tr>
+            <tr data-type="journal">
+              <td data-label="Year" class="num"><span class="tbd">2024</span></td>
+              <td data-label="Publication">Soon, J. J. <span class="tbd">Article title</span>. <i><span class="tbd">Journal</span></i>, <span class="tbd">vol(issue), pages</span>.</td>
+              <td data-label="Type">Journal</td>
+            </tr>
+            <tr data-type="conference">
+              <td data-label="Year" class="num"><span class="tbd">2023</span></td>
+              <td data-label="Publication">Soon, J. J. <span class="tbd">Paper title</span>. Presented at <i><span class="tbd">Conference</span></i>, <span class="tbd">City</span>.</td>
+              <td data-label="Type">Conference</td>
+            </tr>
+            <tr class="empty" hidden><td colspan="3">No entries of this type yet.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="notes" id="pubCount" aria-live="polite">Showing 3 of 3 entries.</p>
+    </section>
+
+    <!-- Table 5 -->
+    <section class="sec wrap" id="methods" aria-labelledby="h-methods">
+      <h2 id="h-methods"><span class="tn">Table 5.</span> Methods</h2>
+      <div class="bt-wrap">
+        <table class="bt bt--stack" aria-labelledby="h-methods">
+          <thead>
+            <tr><th scope="col">Method</th><th scope="col">Taught or applied in</th><th scope="col">Tools</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Method">Research design and the role of theory</td><td data-label="Where">BEER3043</td><td data-label="Tools">—</td></tr>
+            <tr><td data-label="Method">Sampling and fieldwork ethics</td><td data-label="Where">BEER3043</td><td data-label="Tools">—</td></tr>
+            <tr><td data-label="Method">Statistical testing and data analysis</td><td data-label="Where">BEER3043</td><td data-label="Tools"><span class="tbd">e.g. SPSS, Stata, EViews</span></td></tr>
+            <tr><td data-label="Method">Research proposal writing</td><td data-label="Where">BEER3043 group proposal</td><td data-label="Tools">—</td></tr>
+            <tr><td data-label="Method"><span class="tbd">A method from your own research</span></td><td data-label="Where"><span class="tbd">Project or paper</span></td><td data-label="Tools"><span class="tbd">Software</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Correspondence -->
+    <section class="sec wrap corr" id="correspondence" aria-labelledby="h-corr">
+      <div class="corr__address">
+        <h2 id="h-corr">Correspondence</h2>
+        <p>
+          Open to research collaboration, co-authorship, supervision enquiries and invitations to speak.
+        </p>
+        <address>
+          Soon Jan Jan<br>
+          School of Economics, Finance and Banking<br>
+          Universiti Utara Malaysia<br>
+          06010 UUM Sintok, Kedah, Malaysia
+        </address>
+        <dl class="kw">
+          <div><dt>Email</dt><dd><a id="authorEmail" href="mailto:your.email@uum.edu.my" data-placeholder><span class="tbd">your.email@uum.edu.my</span></a></dd></div>
+          <div><dt>Profiles</dt><dd><span class="tbd">Google Scholar</span> · <span class="tbd">ORCID</span> · <span class="tbd">LinkedIn</span></dd></div>
+        </dl>
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+          <p class="field__error" id="e-name"></p>
         </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="section section--alt" id="experience">
-      <div class="container">
-        <h2 class="section__title reveal">Experience &amp; Education</h2>
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <span class="timeline__date">[Year] — Present</span>
-            <h3>Senior Lecturer [Edit title]</h3>
-            <p class="timeline__org">School of Economics, Finance and Banking, Universiti Utara Malaysia</p>
-            <p>Teach undergraduate economics; coordinate the Research Methodology course and supervise student research projects.</p>
-          </li>
-          <li class="timeline__item reveal">
-            <span class="timeline__date">[Year]</span>
-            <h3>PhD in Economics [Edit]</h3>
-            <p class="timeline__org">[University]</p>
-            <p>Thesis: [Title of your thesis].</p>
-          </li>
-          <li class="timeline__item reveal">
-            <span class="timeline__date">[Year]</span>
-            <h3>Master&rsquo;s Degree [Edit]</h3>
-            <p class="timeline__org">[University]</p>
-          </li>
-          <li class="timeline__item reveal">
-            <span class="timeline__date">[Year]</span>
-            <h3>Bachelor&rsquo;s Degree [Edit]</h3>
-            <p class="timeline__org">[University]</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- TEACHING -->
-    <section class="section" id="teaching">
-      <div class="container">
-        <h2 class="section__title reveal">Teaching</h2>
-        <div class="cards">
-          <article class="card reveal">
-            <span class="card__tag">BEER3043 · Coordinator</span>
-            <h3>Research Methodology</h3>
-            <p>An introduction to scientific research for undergraduates, from research philosophy to fieldwork and computer-based data analysis using primary data.</p>
-            <ul class="card__list">
-              <li>Role of theory and the research process</li>
-              <li>Sampling, statistical tests &amp; data analysis</li>
-              <li>Writing a standard research proposal</li>
-            </ul>
-          </article>
-          <article class="card reveal">
-            <span class="card__tag">[Code]</span>
-            <h3>[Another course] [Edit]</h3>
-            <p>Short description of the course and your role in it.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card__tag">Supervision</span>
-            <h3>Student Research</h3>
-            <p>Guiding undergraduate and postgraduate students through proposals, fieldwork and analysis. [Edit]</p>
-          </article>
+        <div class="field">
+          <label for="f-email">Your email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+          <p class="field__error" id="e-email"></p>
         </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH -->
-    <section class="section section--alt" id="research">
-      <div class="container">
-        <h2 class="section__title reveal">Selected Publications</h2>
-        <div class="filters reveal">
-          <button class="chip is-active" data-filter="all">All</button>
-          <button class="chip" data-filter="journal">Journal</button>
-          <button class="chip" data-filter="conference">Conference</button>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="5" required aria-describedby="e-message"></textarea>
+          <p class="field__error" id="e-message"></p>
         </div>
-        <ul class="pubs">
-          <li class="pub reveal" data-type="journal">
-            <span class="pub__year">2025</span>
-            <div><h3>[Article title] [Edit]</h3><p>Soon, J. J., &amp; [Co-author]. <em>[Journal name]</em>, [vol](issue), pages.</p></div>
-          </li>
-          <li class="pub reveal" data-type="journal">
-            <span class="pub__year">2024</span>
-            <div><h3>[Article title] [Edit]</h3><p>Soon, J. J. <em>[Journal name]</em>, [vol](issue), pages.</p></div>
-          </li>
-          <li class="pub reveal" data-type="conference">
-            <span class="pub__year">2023</span>
-            <div><h3>[Paper title] [Edit]</h3><p>Presented at <em>[Conference name]</em>, [City].</p></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <h2 class="section__title reveal">Skills</h2>
-        <div class="skills reveal">
-          <div class="skill"><div class="skill__head"><span>Research design</span><span>95%</span></div><div class="bar"><i data-width="95"></i></div></div>
-          <div class="skill"><div class="skill__head"><span>Econometrics &amp; statistics</span><span>90%</span></div><div class="bar"><i data-width="90"></i></div></div>
-          <div class="skill"><div class="skill__head"><span>SPSS / Stata / EViews [Edit]</span><span>85%</span></div><div class="bar"><i data-width="85"></i></div></div>
-          <div class="skill"><div class="skill__head"><span>Academic writing &amp; communication</span><span>90%</span></div><div class="bar"><i data-width="90"></i></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section section--alt" id="contact">
-      <div class="container contact">
-        <div class="reveal">
-          <h2 class="section__title">Contact</h2>
-          <p>Open to research collaboration, supervision enquiries and speaking invitations.</p>
-          <ul class="contact__list">
-            <li><span>Email</span><a href="mailto:your.email@uum.edu.my">your.email@uum.edu.my</a> [Edit]</li>
-            <li><span>Office</span>School of Economics, Finance and Banking, UUM, 06010 Sintok, Kedah</li>
-            <li><span>Profiles</span><a href="#">Google Scholar</a> · <a href="#">ORCID</a> · <a href="#">LinkedIn</a> [Edit]</li>
-          </ul>
-        </div>
-        <form class="form reveal" id="contactForm" novalidate>
-          <label>Name<input type="text" name="name" required></label>
-          <label>Email<input type="email" name="email" required></label>
-          <label>Message<textarea name="message" rows="4" required></textarea></label>
-          <button type="submit" class="btn btn--primary">Send message</button>
+        <div class="form__foot">
+          <button type="submit" class="btn btn--primary">Open in my email app</button>
           <p class="form__status" id="formStatus" role="status"></p>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Soon Jan Jan · Built with HTML, CSS &amp; JavaScript</p>
-      <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <p>© <span id="year">2026</span> Soon Jan Jan. Set in Computer Modern. Figure 1 is a Lottie animation of illustrative data.</p>
+      <a href="#top" class="foot__top">
+        Back to top
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/lottie_light.min.js" defer></script>
+  <script src="assets/figure-1.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
